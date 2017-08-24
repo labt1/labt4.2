@@ -23,7 +23,7 @@ public class ItemRestService extends SpringBootDemoController {
   }
 
   @RequestMapping("/FindById/{id}")
-  public Item findByName(@PathVariable Long id) {
+  public Item findById(@PathVariable Long id) {
     return getItemService().findById(id);
   }
 

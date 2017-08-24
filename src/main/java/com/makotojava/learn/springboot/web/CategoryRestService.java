@@ -23,7 +23,7 @@ public class CategoryRestService extends SpringBootDemoController {
   }
 
   @RequestMapping("/FindById/{id}")
-  public Category findByName(@PathVariable Long id) {
+  public Category findById(@PathVariable Long id) {
     return getCategoryService().findById(id);
   }
 
